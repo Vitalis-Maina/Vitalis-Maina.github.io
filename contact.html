@@ -224,7 +224,24 @@ textarea:focus {
   100% {transform: translateY(-8rem) scale(0.3, 0.5);}
 }
 */
-
+@media (max-width: 600px) {
+      .wrapper {
+        width: 90%;
+        max-width: 300px;
+      }
+      .letter {
+        width: 100%;
+      }
+      .side:nth-of-type(2) {
+        text-align: left;
+      }
+      input[type="text"], input[type="email"] {
+        width: 100%;
+      }
+      button {
+        width: 100%;
+      }
+    }
 
   </style>
  <small>Enter message (optional) and click button "Send"</small>
@@ -263,7 +280,7 @@ textarea:focus {
      const email = encodeURIComponent(document.getElementById("email").value);
      const message = encodeURIComponent(document.getElementById("message").value);
      const subject = encodeURIComponent("Contact Form Submission");
-     const mailtoLink = `mailto:vitalismaina18@gmail.com?subject=${subject}&body=${encodeURIComponent(`From: ${email}\n\n${message}`)}`;
+     const mailtoLink = `mailto:vitalismaina18@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${email}\n\n${message}`)}`;
      window.location.href = mailtoLink;
    });
 
