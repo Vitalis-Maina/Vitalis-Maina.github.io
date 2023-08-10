@@ -75,24 +75,7 @@
     }
     
 
-    @media (max-width: 576px) {
-      .wrapper {
-        width: 90%;
-        max-width: 300px;
-      }
-      .letter {
-        width: 100%;
-      }
-      .side:nth-of-type(2) {
-        text-align: left;
-      }
-      input[type="text"], input[type="email"] {
-        width: 100%;
-      }
-      button {
-        width: 100%;
-      }
-    }
+    
   </style>
 
 
@@ -166,12 +149,13 @@
       <div class="position-relative py-vh-5 bg-cover bg-center rounded-5"
         style="background-image: url(img/webp/abstract12.webp)">
         <div class="container bg-black px-vw-5 py-vh-3 rounded-5 shadow">
-          <div class="row d-flex align-items-center">
-
-            <div class="col-6 d-flex align-items-center bg-dark shadow rounded-5 p-0" data-aos="zoom-in-up">
+          <div class="row d-md-flex align-items-md-center">
+    
+            <!-- Left Part (Mobile View) -->
+            <div class="col-md-6 d-md-none d-flex align-items-center bg-dark shadow rounded-5 p-0" data-aos="zoom-in-up">
               <div class="row d-flex justify-content-center">
                 <div class="col-12">
-                  <img src="img/20230620001034_[fpdl.in]_cartoon-character-freelancer-with-laptop-his-hands-flies-chair-like-rocket-innovation-startup-concept-3d-illustration_325164-1185_medium.jpg" width="684" height="457" alt="our CEO with some nice numbers"
+                  <img src="img/20230620001034_[fpdl.in]_cartoon-character-freelancer-with-laptop-his-hands-flies-chair-like-rocket-innovation-startup-concept-3d-illustration_325164-1185_medium.jpg" width="100%" height="auto" alt="our CEO with some nice numbers"
                     class="img-fluid rounded-5" loading="lazy">
                 </div>
                 <div class="col-12 col-lg-10 col-xl-8 text-center my-5">
@@ -185,28 +169,37 @@
                 </div>
               </div>
             </div>
-            <div class="col-5 offset-1">
-              <span class="h5 text-secondary fw-lighter">I have </span>
-              <h2 class="display-huge fw-bolder" data-aos="zoom-in-left">+2</h2>
-              <p class="h4 fw-lighter text-secondary">
-                Years of Experience
-              </p>
-
-              <h2 class="display-huge fw-bolder border-top border-secondary pt-5 mt-5" data-aos="zoom-in-left">+4
-              </h2>
-              <p class="h4 fw-lighter text-secondary">
-                Completed Projects
-              </p>
-              <h2 class="display-huge fw-bolder border-top border-secondary pt-5 mt-5" data-aos="zoom-in-left">1000%
-              </h2>
-              <p class="h4 fw-lighter text-secondary">
-                Commitment
-              </p>
+            
+            <!-- Right Part -->
+            <div class="col-md-5 offset-md-1">
+              <div class="text-md-end">
+                <span class="h5 text-secondary fw-lighter">I have </span>
+                <h2 class="display-huge fw-bolder" data-aos="zoom-in-left">+2</h2>
+                <p class="h4 fw-lighter text-secondary">
+                  Years of Experience
+                </p>
+    
+                <h2 class="display-huge fw-bolder border-top border-secondary pt-5 mt-5" data-aos="zoom-in-left">+4
+                </h2>
+                <p class="h4 fw-lighter text-secondary">
+                  Completed Projects
+                </p>
+                <h2 class="display-huge fw-bolder border-top border-secondary pt-5 mt-5" data-aos="zoom-in-left">1000%
+                </h2>
+                <p class="h4 fw-lighter text-secondary">
+                  Commitment
+                </p>
+              </div>
             </div>
+            
+            <!-- Left Part (Desktop View) -->
+          
+            
           </div>
         </div>
       </div>
     </div>
+    
 
     <div class="bg-dark">
       <div class="container px-vw-5 py-vh-5">
