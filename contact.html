@@ -272,22 +272,24 @@ textarea:focus {
  </div>
  <p class="result-message centered">Thank you for your message</p>
  <script>
-   function addClass() {
-     document.body.classList.add("sent");
-   }
+  function addClass() {
+    document.body.classList.add("sent");
+  }
 
-   const sendButton = document.getElementById("sendLetter");
-   sendButton.addEventListener("click", function() {
-     const name = encodeURIComponent(document.getElementById("name").value);
-     const email = encodeURIComponent(document.getElementById("email").value);
-     const message = encodeURIComponent(document.getElementById("message").value);
-     const subject = encodeURIComponent("Contact Form Submission");
-     const mailtoLink = `mailto:vitalismaina18@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${email}\n\n${message}`)}`;
-     window.location.href = mailtoLink;
-   });
+  const sendButton = document.getElementById("sendLetter");
+  sendButton.addEventListener("click", function() {
+    const name = encodeURIComponent(document.getElementById("name").value);
+    const email = encodeURIComponent(document.getElementById("email").value);
+    const message = encodeURIComponent(document.getElementById("message").value);
+    const subject = "Contact Form Submission";
+    const from = email;
+    const mailtoLink = `mailto:vitalismaina18@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`\t\n${message}`)}`;
+    window.location.href = mailtoLink;
+  });
 
-   sendLetter.addEventListener("click", addClass);
- </script>
+  sendLetter.addEventListener("click", addClass);
+</script>
+
 </body>
 
 </html>
