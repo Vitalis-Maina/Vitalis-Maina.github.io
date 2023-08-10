@@ -283,7 +283,7 @@ textarea:focus {
     const message = encodeURIComponent(document.getElementById("message").value);
     const subject = "Contact Form Submission";
     const from = email;
-    const mailtoLink = `mailto:vitalismaina18@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`\t\n${message}`)}`;
+    const mailtoLink = `mailto:vitalismaina18@gmail.com?subject=${subject}&body=${`\t\n${message}`}`;
     window.location.href = mailtoLink;
   });
 
