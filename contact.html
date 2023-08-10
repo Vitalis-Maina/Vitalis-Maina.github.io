@@ -13,13 +13,13 @@
   box-sizing: border-box;
 }
 body {
-  margin: 0;
+  margin: 0px;
   padding: 0;
   background-color: #c8e7d8;
   color: #4e5e72;
   text-align: center;
   font-family: monospace;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 h1, p {
   margin: 0;
@@ -34,6 +34,7 @@ small {
   padding: 1rem 0;
   font-size: 0.8rem;
   transition: opacity 0.33s;
+  
 }
 textarea, input, button {
   line-height: 1.5rem;
@@ -225,9 +226,15 @@ textarea:focus {
 }
 */
 @media (max-width: 600px) {
+
+
+    .outer{
+       margin-bottom: 10rem; 
+    }
       .wrapper {
         width: 90%;
         max-width: 300px;
+       
       }
       .letter {
         width: 100%;
@@ -247,7 +254,9 @@ textarea:focus {
   <h2>Let’s Talk About Code</h2>
  <small>
   I can assist you with developing a product, feature, or website. Examine some of my work and experience! If you enjoy what you see and have a project that needs to be developed, please do not hesitate to contact me.</small>
- <div class="wrapper centered">
+
+  <div class="outer">
+ <div class="wrapper  centered">
    <article class="letter">
      <div class="side">
        <h1>Contact us</h1>
@@ -270,6 +279,7 @@ textarea:focus {
    <div class="envelope front"></div>
    <div class="envelope back"></div>
  </div>
+</div>
  <p class="result-message centered">Thank you for your message</p>
  <script>
   function addClass() {
