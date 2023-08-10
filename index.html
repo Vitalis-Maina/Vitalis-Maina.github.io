@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="h-100" lang="en">
+<html  lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -10,12 +10,21 @@
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="96x96" href="img/favicon1.ico">
   <meta name="author" content="Vitalis Maina">
-  <meta name="HandheldFriendly" content="true">
+  <!-- <meta name="HandheldFriendly" content="true"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Vitalis Maina</title>
   <link rel="stylesheet" href="css/theme.min.css">
 
   <style>
     /* inter-300 - latin */
+    body {
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+ 
+}
     @font-face {
       font-family: 'Inter';
       font-style: normal;
@@ -64,6 +73,44 @@
         url('fonts/inter-v12-latin-700.woff') format('woff');
       /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     }
+    
+
+    @media (max-width: 600px) {
+      body {
+        width: 90%;
+        max-width: 300px;
+      }
+      .letter {
+        width: 100%;
+      }
+      .side:nth-of-type(2) {
+        text-align: left;
+      }
+      input[type="text"], input[type="email"] {
+        width: 100%;
+      }
+      button {
+        width: 100%;
+      }
+    }
+    @media (max-width: 576px) {
+      .wrapper {
+        width: 90%;
+        max-width: 300px;
+      }
+      .letter {
+        width: 100%;
+      }
+      .side:nth-of-type(2) {
+        text-align: left;
+      }
+      input[type="text"], input[type="email"] {
+        width: 100%;
+      }
+      button {
+        width: 100%;
+      }
+    }
   </style>
 
 
@@ -102,8 +149,7 @@
         </li>
 
       </ul>
-      <a href="#" aria-label="Get My Resume" class="btn btn-outline-light">
-        <small>Download Resume</small>
+     
       </a>
     </div>
   </nav>
@@ -324,7 +370,7 @@
 
           <div class="col-12 col-lg-7">
 
-            <img class="img-fluid rounded-5 ms-5 mb-n5 shadow" src="img/illustration1.jpg" width="512" height="512"
+            <img class="img-fluid rounded-5 ms-6 mb-n5 shadow"" src="img/illustration1.jpg" width="512" height="512"
               alt="another nice person" loading="lazy" data-aos="zoom-in-up">
           </div>
           <div class="col-12 col-lg-5 bg-dark rounded-5 py-5" data-aos="fade">
