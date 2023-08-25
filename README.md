@@ -2,7 +2,7 @@
 
 Scan the QR code or use the provided link to view the website.
 
-![QR Code](./img/qr.PNG)
+![QR Code](./img/qr-code.png)
 
 ## Link
 - Click [here](https://vitalis-maina.github.io/) to view the website.
