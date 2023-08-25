@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="h-100" lang="en">
+<html  lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -10,12 +10,21 @@
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="96x96" href="img/favicon1.ico">
   <meta name="author" content="Vitalis Maina">
-  <meta name="HandheldFriendly" content="true">
+  <!-- <meta name="HandheldFriendly" content="true"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Vitalis Maina</title>
   <link rel="stylesheet" href="css/theme.min.css">
 
   <style>
     /* inter-300 - latin */
+    body {
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+ 
+}
     @font-face {
       font-family: 'Inter';
       font-style: normal;
@@ -64,6 +73,9 @@
         url('fonts/inter-v12-latin-700.woff') format('woff');
       /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     }
+    
+
+    
   </style>
 
 
@@ -102,8 +114,7 @@
         </li>
 
       </ul>
-      <a href="#" aria-label="Get My Resume" class="btn btn-outline-light">
-        <small>Download Resume</small>
+     
       </a>
     </div>
   </nav>
@@ -138,47 +149,51 @@
       <div class="position-relative py-vh-5 bg-cover bg-center rounded-5"
         style="background-image: url(img/webp/abstract12.webp)">
         <div class="container bg-black px-vw-5 py-vh-3 rounded-5 shadow">
-          <div class="row d-flex align-items-center">
-
-            <div class="col-6 d-flex align-items-center bg-dark shadow rounded-5 p-0" data-aos="zoom-in-up">
+          <div class="row d-md-flex align-items-md-center">
+    
+            <!-- Left Part (Mobile View) -->
+            <div class="col-md-6 d-md-none d-flex align-items-center bg-dark shadow rounded-5 p-0" data-aos="zoom-in-up">
               <div class="row d-flex justify-content-center">
                 <div class="col-12">
-                  <img src="img/20230620001034_[fpdl.in]_cartoon-character-freelancer-with-laptop-his-hands-flies-chair-like-rocket-innovation-startup-concept-3d-illustration_325164-1185_medium.jpg" width="684" height="457" alt="our CEO with some nice numbers"
+                  <img src="img/20230620001034_[fpdl.in]_cartoon-character-freelancer-with-laptop-his-hands-flies-chair-like-rocket-innovation-startup-concept-3d-illustration_325164-1185_medium.jpg" width="100%" height="auto" alt="our CEO with some nice numbers"
                     class="img-fluid rounded-5" loading="lazy">
                 </div>
                 <div class="col-12 col-lg-10 col-xl-8 text-center my-5">
-                  <p class="lead border-bottom pb-4 border-secondary">"I am a dedicated full-stack developer, committed to pushing boundaries 
-                    in the field. My collaborative spirit complements my adept problem-solving 
-                    skills, making me an asset to any team. My focus is on creating resilient 
-                    and scalable applications that offer exceptional user experiences. 
-                    Proficient in both front-end and back-end web application development, 
-                    my thirst for knowledge and outgoing nature drive my continuous journey of 
-                    growth and innovation."</p>
+                  <p class="lead border-bottom pb-4 border-secondary">"I'm a passionate full-stack developer with a strong drive to innovate within the field. My collaborative mindset complements my excellent problem-solving abilities, positioning me as a valuable team member. I specialize in crafting robust, scalable applications that prioritize top-notch user experiences. With expertise in both front-end and back-end development, I'm constantly seeking knowledge and embracing new challenges to fuel my journey of growth and creativity."</p>
                 </div>
               </div>
             </div>
-            <div class="col-5 offset-1">
-              <span class="h5 text-secondary fw-lighter">I have </span>
-              <h2 class="display-huge fw-bolder" data-aos="zoom-in-left">+2</h2>
-              <p class="h4 fw-lighter text-secondary">
-                Years of Experience
-              </p>
-
-              <h2 class="display-huge fw-bolder border-top border-secondary pt-5 mt-5" data-aos="zoom-in-left">+4
-              </h2>
-              <p class="h4 fw-lighter text-secondary">
-                Completed Projects
-              </p>
-              <h2 class="display-huge fw-bolder border-top border-secondary pt-5 mt-5" data-aos="zoom-in-left">1000%
-              </h2>
-              <p class="h4 fw-lighter text-secondary">
-                Commitment
-              </p>
+            
+            <!-- Right Part -->
+            <div class="col-md-5 offset-md-1">
+              <div class="text-md-end">
+                <span class="h5 text-secondary fw-lighter">I have </span>
+                <h2 class="display-huge fw-bolder" data-aos="zoom-in-left">+2</h2>
+                <p class="h4 fw-lighter text-secondary">
+                  Years of Experience
+                </p>
+    
+                <h2 class="display-huge fw-bolder border-top border-secondary pt-5 mt-5" data-aos="zoom-in-left">+4
+                </h2>
+                <p class="h4 fw-lighter text-secondary">
+                  Completed Projects
+                </p>
+                <h2 class="display-huge fw-bolder border-top border-secondary pt-5 mt-5" data-aos="zoom-in-left">1000%
+                </h2>
+                <p class="h4 fw-lighter text-secondary">
+                  Commitment
+                </p>
+              </div>
             </div>
+            
+            <!-- Left Part (Desktop View) -->
+          
+            
           </div>
         </div>
       </div>
     </div>
+    
 
     <div class="bg-dark">
       <div class="container px-vw-5 py-vh-5">
@@ -205,8 +220,12 @@
               including web apps, microservices, and backend systems.<br>
               <div class="col-10 text-center">
                 <a href="https://github.com/Vitalis-Maina/" class="btn btn-xl btn-light">View &#x2192;</a>
+<<<<<<< HEAD
               </div>              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                 class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+=======
+              </div>  
+>>>>>>> 026b6bce8af6b9473f19d868c6e90b75f41f03fe
                 <path fill-rule="evenodd"
                   d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
               </svg>
@@ -218,8 +237,12 @@
               for studying and applying new technologies to improve API performance.<br>
               <div class="col-10 text-center">
                 <a href="https://github.com/Vitalis-Maina/" class="btn btn-xl btn-light">View &#x2192;</a>
+<<<<<<< HEAD
               </div>              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                 class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+=======
+              </div>            
+>>>>>>> 026b6bce8af6b9473f19d868c6e90b75f41f03fe
                 <path fill-rule="evenodd"
                   d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
               </svg>
@@ -248,8 +271,12 @@
                   <div class="col-10 text-center">
                     <a href="https://github.com/Vitalis-Maina/" class="btn btn-xl btn-light">View &#x2192;</a>
                   </div>
+<<<<<<< HEAD
   
                 </div>
+=======
+                  </div>
+>>>>>>> 026b6bce8af6b9473f19d868c6e90b75f41f03fe
               </div>
             </div>
 
@@ -271,7 +298,11 @@
                     <div class="col-10 text-center">
                       <a href="https://github.com/Vitalis-Maina/" class="btn btn-xl btn-light">View &#x2192;</a>
                     </div>
+<<<<<<< HEAD
                 </div>
+=======
+                  </div>
+>>>>>>> 026b6bce8af6b9473f19d868c6e90b75f41f03fe
               </div>
             </div>
           </div>
@@ -327,7 +358,7 @@
 
           <div class="col-12 col-lg-7">
 
-            <img class="img-fluid rounded-5 ms-5 mb-n5 shadow" src="img/illustration1.jpg" width="512" height="512"
+            <img class="img-fluid rounded-5 ms-6 mb-n5 shadow"" src="img/illustration1.jpg" width="512" height="512"
               alt="another nice person" loading="lazy" data-aos="zoom-in-up">
           </div>
           <div class="col-12 col-lg-5 bg-dark rounded-5 py-5" data-aos="fade">

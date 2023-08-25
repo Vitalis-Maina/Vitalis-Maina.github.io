@@ -4,27 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="css/theme.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon1.ico">
+
 </head>
 <body>
   <style>
-    @use postcss-nested;
+    /* @use postcss-nested; */
 @import url(https://fonts.googleapis.com/css?family=Dancing+Script:400,700);
 * {
   box-sizing: border-box;
 }
 body {
-  margin: 0;
+  margin: 0px;
   padding: 0;
-  background-color: #c8e7d8;
-  color: #4e5e72;
+  background-color: #353636;
+  color: #fff;
+  font-weight: 300;
   text-align: center;
-  font-family: monospace;
-  overflow: hidden;
+  font-family: 'Inter';
+    font-style: normal;
+   
 }
 h1, p {
   margin: 0;
   padding: 0;
 }
+
 h1 {
   font-size: 2rem;
   font-family: 'Dancing Script';
@@ -34,6 +43,7 @@ small {
   padding: 1rem 0;
   font-size: 0.8rem;
   transition: opacity 0.33s;
+  
 }
 textarea, input, button {
   line-height: 1.5rem;
@@ -162,6 +172,12 @@ textarea:focus {
   transform: translateY(9rem);
   z-index: -9999;
 }
+/* Add this CSS to your existing styles */
+button#sendLetter {
+  background-color: rgba(19, 18, 18, 0.774);
+  color: white;
+}
+
 .sent {
   & .letter {
     animation: scaleLetter 1s forwards ease-in /*,
@@ -225,11 +241,101 @@ textarea:focus {
 }
 */
 
+@media (max-width: 600px) {
 
+    p{
+ 
+      font-size: 15px;
+   }
+    .outer{
+       margin-bottom: 10rem; 
+    }
+      .wrapper {
+        width: 90%;
+        max-width: 300px;
+       
+      }
+      .letter {
+        width: 100%;
+      }
+      .side:nth-of-type(2) {
+        text-align: left;
+      }
+      input[type="text"], input[type="email"] {
+        width: 100%;
+      }
+      button {
+        width: 100%;
+      }
+    }
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: local(''),
+        url('fonts/inter-v12-latin-300.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('fonts/inter-v12-latin-300.woff') format('woff');
+      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+
+    /* inter-400 - latin */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: local(''),
+        url('fonts/inter-v12-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('fonts/inter-v12-latin-regular.woff') format('woff');
+      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: local(''),
+        url('fonts/inter-v12-latin-500.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('fonts/inter-v12-latin-500.woff') format('woff');
+      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: local(''),
+        url('fonts/inter-v12-latin-700.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('fonts/inter-v12-latin-700.woff') format('woff');
+      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+    @keyframes zoomInUp {
+      from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0) scale(0.5);
+      }
+      to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0) scale(1);
+      }
+    }
+    
   </style>
- <small>Enter message (optional) and click button "Send"</small>
- <div class="wrapper centered">
-   <article class="letter">
+  <h2 style="animation: zoomInUp 1s forwards">Let’s Talk About Code</h2>
+ <p style="animation: zoomInUp 1s forwards">  I can assist you with developing a product, feature, or website. Examine some of my work and experience! If you enjoy what you see and have a project that needs to be developed, please do not hesitate to contact me.</small>
+ </p>
+
+  <div class="outer">
+    
+    <div class="wrapper bg-black centered" style="animation: zoomInUp 1s forwards;">
+      <article class="letter">
      <div class="side">
        <h1>Contact us</h1>
        <p>
@@ -244,31 +350,36 @@ textarea:focus {
          <input type="email" id="email" placeholder="Your email">
        </p>
        <p>
-         <button id="sendLetter">Send</button>
-       </p>
+        <button class="btn btn-light" id="sendLetter">Send</button>
+      </p>
      </div>
    </article>
    <div class="envelope front"></div>
    <div class="envelope back"></div>
  </div>
+</div>
  <p class="result-message centered">Thank you for your message</p>
  <script>
-   function addClass() {
-     document.body.classList.add("sent");
-   }
+  function addClass() {
+    document.body.classList.add("sent");
+  }
 
-   const sendButton = document.getElementById("sendLetter");
-   sendButton.addEventListener("click", function() {
-     const name = encodeURIComponent(document.getElementById("name").value);
-     const email = encodeURIComponent(document.getElementById("email").value);
-     const message = encodeURIComponent(document.getElementById("message").value);
-     const subject = encodeURIComponent("Contact Form Submission");
-     const mailtoLink = `mailto:vitalismaina18@gmail.com?subject=${subject}&body=${encodeURIComponent(`From: ${email}\n\n${message}`)}`;
-     window.location.href = mailtoLink;
-   });
+  const sendButton = document.getElementById("sendLetter");
+  sendButton.addEventListener("click", function() {
+    const name = encodeURIComponent(document.getElementById("name").value);
+    const email = encodeURIComponent(document.getElementById("email").value);
+    const message = encodeURIComponent(document.getElementById("message").value);
+    const subject = "Contact Form Submission";
+    const from = email;
 
-   sendLetter.addEventListener("click", addClass);
- </script>
+    const mailtoLink = `mailto:vitalismaina18@gmail.com?subject=${subject}&body=${message}&from=${from}`;
+    window.location.href = mailtoLink;
+  });
+
+  sendLetter.addEventListener("click", addClass);
+  AOS.init();
+</script>
+
 </body>
 
 </html>
