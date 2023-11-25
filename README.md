@@ -1,6 +1,6 @@
 # QR Code
 
-Scan the QR code or use the provided link to view the website.
+Scan the QR code to view the website.
 
 ![QR Code](./img/qr-code.png)
 
